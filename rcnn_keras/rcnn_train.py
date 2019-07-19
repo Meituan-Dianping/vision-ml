@@ -165,5 +165,5 @@ if you want update train image, run Image().get_augmentation,
 you will get a trained model by train_model()
 """
 if __name__ == "__main__":
-    # Image().get_augmentation()
+    Image().get_augmentation()
     train_model()
