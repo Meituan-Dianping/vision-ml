@@ -125,7 +125,7 @@ def train_model():
     model.add(Dropout(0.25))
     model.add(Flatten())
     model.add(Dense(128, activation='relu', kernel_regularizer=regularizers.l2(0.01)))
-    # model.add(Dropout(0.25))
+    model.add(Dropout(0.25))
     model.add(Dense(num_classes, activation='softmax', kernel_regularizer=regularizers.l2(0.01)))
 
     model.compile(loss=keras.losses.categorical_crossentropy,

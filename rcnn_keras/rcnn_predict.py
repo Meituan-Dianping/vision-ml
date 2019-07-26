@@ -55,11 +55,11 @@ def get_proposals(img):
     scale = 500 / img.shape[1]
     img = cv2.resize(img, (0, 0), fx=scale, fy=scale)
     gray, binary = get_binary_image(img)
-    mg_lbl, regions = selectivesearch.selective_search(img, min_size=80)
+    mg_lbl, regions = selectivesearch.selective_search(binary, SCALE, SIGMA, MIN_SIZE)
     regions = get_proposal(regions, img.shape)
     print("proposals:", len(regions))
-    cv2.drawContours(gray, regions, -1, (255, 145, 30), 2)
-    image_view(gray)
+    cv2.drawContours(binary, regions, -1, (255, 145, 30), 2)
+    image_view(binary)
 
 
 def model_predict(img_file, view):
@@ -78,7 +78,7 @@ def model_predict(img_file, view):
     img = cv2.resize(img, (0, 0), fx=scale, fy=scale)
     gray, binary = get_binary_image(img)
     if get_gray_score(binary):
-        mg_lbl, regions = selectivesearch.selective_search(img, min_size=80)
+        mg_lbl, regions = selectivesearch.selective_search(binary, SCALE, SIGMA, MIN_SIZE)
         regions = get_proposal(regions, img.shape)
         rectangles, score_list = get_prediction(binary, regions)
         if len(score_list) > 0:
@@ -100,3 +100,4 @@ def model_predict(img_file, view):
 """
 if __name__ == "__main__":
     model_predict("image.png", view=True)
+    # get_proposals("image.png")

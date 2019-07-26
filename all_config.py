@@ -17,6 +17,10 @@ IMAGE_PATH = "image/"
 TRAIN_PATH = "train/"
 PREDICT_PATH = "predict/"
 
-# augmentation size for one class
-augmentation_size = 320
+# selective search
+SCALE = 2.0
+SIGMA = 0.8
+MIN_SIZE = 80
 
+# augmentation size for one class
+augmentation_size = 350
