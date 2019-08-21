@@ -3,6 +3,7 @@ numpy==1.15.0
 opencv-python==3.4.2.17
 tensorflow==1.14.0
 Flask=1.0.2
+Flask-Cors==3.0.7
 scikit-learn==0.19.2
 scipy==1.1.0
 selectivesearch==0.4
