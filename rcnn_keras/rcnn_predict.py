@@ -2,6 +2,7 @@ import selectivesearch.selectivesearch
 from all_config import *
 from image_utils.image_utils import *
 from keras.models import load_model
+import os
 
 
 img_rows, img_cols = IMG_ROW, IMG_COL
@@ -88,6 +89,8 @@ def model_predict(img_file, view):
             res_obj["score"] = float(score)
             res_obj["position"] = position
             cv2.drawContours(img, [rect], -1, (255, 145, 30), 2)
+            if not os.path.exists(PREDICT_PATH):
+                os.mkdir(PREDICT_PATH)
             cv2.imwrite(PREDICT_PATH+prediction, img)
     if view:
         print(res_obj)
