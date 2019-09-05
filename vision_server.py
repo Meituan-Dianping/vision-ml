@@ -2,7 +2,7 @@ from flask import Flask
 from flask import jsonify
 from flask import request
 from flask_cors import CORS
-from rcnn_keras.rcnn_predict import model_predict
+from rcnn_predict import model_predict
 
 app = Flask(__name__)
 CORS(app)
