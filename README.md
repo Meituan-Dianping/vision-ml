@@ -1,4 +1,5 @@
 # Vision
+[![Build Status](https://www.travis-ci.org/Meituan-Dianping/vision.svg?branch=master)](https://www.travis-ci.org/Meituan-Dianping/vision)
 ![GitHub](https://img.shields.io/badge/Python-3.6-blue)
 ![GitHub](https://img.shields.io/github/license/Meituan-Dianping/Vision)
 
