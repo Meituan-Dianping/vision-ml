@@ -49,6 +49,8 @@ python rcnn_predict.py
 
 1. Start the web server
 
+You can create server with Dockerfile
+
 ```bash
 python vision_server.py
 ```
