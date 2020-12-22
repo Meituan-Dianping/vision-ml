@@ -53,7 +53,7 @@ def get_proposals(img):
     :return:
     """
     img = cv2.imread(img)
-    scale = 500 / img.shape[1]
+    scale = 800 / img.shape[1]
     img = cv2.resize(img, (0, 0), fx=scale, fy=scale)
     gray, binary = get_binary_image(img)
     mg_lbl, regions = selectivesearch.selective_search(binary, SCALE, SIGMA, MIN_SIZE)
