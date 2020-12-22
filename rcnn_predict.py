@@ -94,6 +94,7 @@ def model_predict(img_file, view):
             cv2.imwrite(PREDICT_PATH+prediction, img)
     if view:
         print(res_obj)
+        print('result saved:'+PREDICT_PATH+prediction)
         image_view(img)
     return res_obj
 

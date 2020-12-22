@@ -1,6 +1,6 @@
 <h1 align="center">Vision-ml</h1>
 
-[![Build Status](https://www.travis-ci.org/Meituan-Dianping/vision-ml.svg?branch=master)](https://www.travis-ci.org/Meituan-Dianping/vision)
+[![Build Status](https://www.travis-ci.org/Meituan-Dianping/vision-ml.svg?branch=master)](https://www.travis-ci.org/Meituan-Dianping/vision-ml)
 ![GitHub](https://img.shields.io/badge/Python-3.6-blue)
 ![GitHub](https://img.shields.io/github/license/Meituan-Dianping/Vision)
 
@@ -29,6 +29,7 @@ A typical usage scenario would be:
 Python3.5 or higher
 
 ```bash
+# create venv before install requirements
 pip install  -r requirements.txt
 ```
 

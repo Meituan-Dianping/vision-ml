@@ -4,3 +4,4 @@ capture/
 .DS_Store
 .idea/
 *.h5
+/venv/
