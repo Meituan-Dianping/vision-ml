@@ -65,7 +65,7 @@ python vision_server.py
 2. Post image to web server
 
 ```bash
-curl  http://localhost:9092/client/vision  -F "file=@path_to_image.png"
+curl  http://localhost:9092/client/vision  -F "file=@${IMAGE_PATH}.png"
 ```
 
 3. The response from the web server will have the coordinate or the UI element, alone with a value of score 0 or 1.0 (0 means not found, 1.0 means found).
