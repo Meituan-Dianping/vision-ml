@@ -38,7 +38,7 @@ is for version control, you can update it in file named "all_config".
 
 There are two ways of using Vision.
 
-### Predict a image with Python script
+### Predict an image with Python script
 
 1. Update your file path in "rcnn_predict.py"
 
@@ -52,7 +52,7 @@ model_predict("path/to/image.png", view=True)
 python rcnn_predict.py
 ```
 
-### Predict a image with a web server
+### Predict an image with a web server
 
 1. Start the web server
 
