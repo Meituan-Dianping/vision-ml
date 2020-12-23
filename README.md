@@ -26,7 +26,7 @@ A typical usage scenario would be:
 
 ## Requirements
 
-Python3.5 or higher
+Python3.6.x
 
 ```bash
 # create venv before install requirements
